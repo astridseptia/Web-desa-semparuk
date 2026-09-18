@@ -1,326 +1,62 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Desa Semparuk — Portal Resmi Pemerintah Desa</title>
-<meta name="description"
-content="Portal Informasi dan Pelayanan Digital Desa Semparuk, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- LOADER -->
-<div class="page-loader" id="pageLoader">
-    <div class="loader-mark">DS</div>
-</div>
-<!-- TOPBAR -->
-<div class="topbar">
-    <div class="container">
-        <div class="topbar-left">
-            PEMERINTAH DESA SEMPARUK
-            <span>
-                Kecamatan Semparuk • Kabupaten Sambas • Kalimantan Barat
-            </span>
-        </div>
-        <div class="topbar-right">
-            <span>
-                <i class="fa-solid fa-location-dot"></i>
-                Semparuk, Sambas
-            </span>
-            <span>
-                <i class="fa-solid fa-envelope"></i>
-                pemdes.semparuk@sambas.go.id
-            </span>
-            <span>
-                <i class="fa-solid fa-phone"></i>
-                (0562) 000-000
-            </span>
-        </div>
+<!-- ============ BERANDA (HERO SECTION) ============ -->
+<header class="hero" id="beranda">
+  <div class="hero-shape s1"></div>
+  <div class="hero-shape s2"></div>
+  <div class="container hero-content">
+    <div class="hero-badge reveal in"><i class="fa-solid fa-shield-halved"></i> WEBSITE RESMI DESA</div>
+    <h1 class="reveal in">Selamat Datang di Desa Semparuk</h1>
+    <p class="lead reveal in">Portal Informasi dan Pelayanan Digital Desa Semparuk, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat.</p>
+    <div class="hero-actions reveal in">
+      <a href="#profil" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Jelajahi Desa</a>
+      <a href="#layanan" class="btn btn-outline"><i class="fa-solid fa-file-lines"></i> Layanan Desa</a>
     </div>
-</div>
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-    <div class="nav-inner container">
-        <a href="index.html" class="brand">
-            <div class="brand-mark">DS</div>
-            <div class="brand-text">
-                <div class="name">DESA SEMPARUK</div>
-                <div class="tag">
-                    Pemerintah Desa Semparuk
-                </div>
-            </div>
-        </a>
-        <ul class="nav-menu" id="navMenu">
-            <li>
-                <a href="index.html" class="nav-link active">
-                    Beranda
-                </a>
-            </li>
-            <li>
-                <a href="profil.html" class="nav-link">
-                    Profil
-                </a>
-            </li>
-            <li>
-                <a href="pemerintahan.html" class="nav-link">
-                    Pemerintahan
-                </a>
-            </li>
-            <li>
-                <a href="program.html" class="nav-link">
-                    Program
-                </a>
-            </li>
-            <li>
-                <a href="layanan.html" class="nav-link">
-                    Layanan
-                </a>
-            </li>
-            <li>
-                <a href="galeri.html" class="nav-link">
-                    Galeri
-                </a>
-            </li>
-            <li>
-                <a href="berita.html" class="nav-link">
-                    Berita
-                </a>
-            </li>
-            <li>
-                <a href="pengaduan.html" class="nav-link">
-                    Pengaduan
-                </a>
-            </li>
-            <li>
-                <a href="kontak.html" class="nav-link">
-                    Kontak
-                </a>
-            </li>
-        </ul>
-        <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-            <a href="layanan.html" class="btn btn-ghost">
-                Layanan Desa
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- HERO -->
-<header class="hero">
-    <div class="hero-shape s1"></div>
-    <div class="hero-shape s2"></div>
-    <div class="container hero-content">
-        <div class="hero-badge reveal">
-            <i class="fa-solid fa-shield-halved"></i>
-            WEBSITE RESMI DESA
-        </div>
-        <h1 class="reveal">
-            Selamat Datang di Desa Semparuk
-        </h1>
-        <p class="lead reveal">
-            Portal Informasi dan Pelayanan Digital Desa Semparuk,
-            Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat.
-        </p>
-        <div class="hero-actions reveal">
-            <a href="profil.html" class="btn btn-primary">
-                <i class="fa-solid fa-compass"></i>
-                Jelajahi Desa
-            </a>
-            <a href="layanan.html" class="btn btn-outline">
-                <i class="fa-solid fa-file-lines"></i>
-                Layanan Desa
-            </a>
-        </div>
-    </div>
+  </div>
 </header>
-<!-- QUICK ACCESS -->
-<section class="quick-access container">
-    <div class="quick-card reveal">
-        <h3>Layanan Digital Desa</h3>
-        <div class="quick-grid">
-            <a href="layanan.html" class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-file-signature"></i>
-                </div>
-                <span>Administrasi Desa</span>
-            </a>
-            <a href="profil.html" class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-circle-info"></i>
-                </div>
-                <span>Informasi Desa</span>
-            </a>
-            <a href="pengaduan.html" class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-comment-dots"></i>
-                </div>
-                <span>Pengaduan</span>
-            </a>
-            <a href="pengaduan.html#cek-pengaduan"
-               class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <span>Cek Pengaduan</span>
-            </a>
-            <a href="berita.html" class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-newspaper"></i>
-                </div>
-                <span>Berita Desa</span>
-            </a>
-            <a href="kontak.html" class="quick-item">
-                <div class="ic">
-                    <i class="fa-solid fa-address-book"></i>
-                </div>
-                <span>Kontak Desa</span>
-            </a>
-        </div>
+
+<!-- QUICK ACCESS (bagian dari Beranda) -->
+<div class="quick-access container">
+  <div class="quick-card reveal">
+    <h3>Layanan Digital Desa</h3>
+    <div class="quick-grid">
+      <a href="#layanan" class="quick-item"><div class="ic"><i class="fa-solid fa-file-signature"></i></div><span>Administrasi Desa</span></a>
+      <a href="#profil" class="quick-item"><div class="ic"><i class="fa-solid fa-circle-info"></i></div><span>Informasi Desa</span></a>
+      <a href="#pengaduan" class="quick-item"><div class="ic"><i class="fa-solid fa-comment-dots"></i></div><span>Pengaduan</span></a>
+      <a href="#cek-pengaduan" class="quick-item"><div class="ic"><i class="fa-solid fa-magnifying-glass"></i></div><span>Cek Pengaduan</span></a>
+      <a href="#berita" class="quick-item"><div class="ic"><i class="fa-solid fa-newspaper"></i></div><span>Berita Desa</span></a>
+      <a href="#kontak" class="quick-item"><div class="ic"><i class="fa-solid fa-address-book"></i></div><span>Kontak Desa</span></a>
     </div>
+  </div>
+</div>
+
+<!-- STATISTIK DESA (bagian dari Beranda) -->
+<section class="stats" id="statistik">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="divider-orn"></div>
+      <h2>Desa Semparuk Dalam Data</h2>
+      <p>Gambaran umum kependudukan dan wilayah administratif desa.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="ic"><i class="fa-solid fa-users"></i></div>
+        <div class="stat-num" data-count="30267">0</div>
+        <div class="stat-label">Jiwa</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="ic"><i class="fa-solid fa-house"></i></div>
+        <div class="stat-num" data-count="9573">0</div>
+        <div class="stat-label">Rumah Tangga</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="ic"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div class="stat-num" data-count="21">0</div>
+        <div class="stat-label">Dusun</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="ic"><i class="fa-solid fa-star"></i></div>
+        <div class="stat-num" data-count="9">0</div>
+        <div class="stat-label">Program Unggulan</div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- STATISTIK -->
-<section class="stats">
-    <div class="container">
-        <div class="section-head reveal">
-            <div class="divider-orn"></div>
-            <h2>
-                Desa Semparuk Dalam Data
-            </h2>
-            <p>
-                Gambaran umum kependudukan dan wilayah administratif desa.
-            </p>
-        </div>
-        <div class="stats-grid">
-            <div class="stat-card reveal">
-                <div class="ic">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <div class="stat-num" data-count="30267">
-                    0
-                </div>
-                <div class="stat-label">
-                    Jiwa
-                </div>
-            </div>
-            <div class="stat-card reveal">
-                <div class="ic">
-                    <i class="fa-solid fa-house"></i>
-                </div>
-                <div class="stat-num" data-count="9573">
-                    0
-                </div>
-                <div class="stat-label">
-                    Rumah Tangga
-                </div>
-            </div>
-            <div class="stat-card reveal">
-                <div class="ic">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </div>
-                <div class="stat-num" data-count="21">
-                    0
-                </div>
-                <div class="stat-label">
-                    Dusun
-                </div>
-            </div>
-            <div class="stat-card reveal">
-                <div class="ic">
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="stat-num" data-count="9">
-                    0
-                </div>
-                <div class="stat-label">
-                    Program Unggulan
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <div class="footer-brand">
-                    <div class="brand-mark">
-                        DS
-                    </div>
-                    <div class="name">
-                        DESA SEMPARUK
-                    </div>
-                </div>
-                <p class="tagline">
-                    Bersama Membangun Desa,
-                    Menuju Desa Digital.
-                </p>
-            </div>
-            <div>
-                <h5>Navigasi</h5>
-                <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                    <li><a href="program.html">Program</a></li>
-                    <li><a href="layanan.html">Layanan</a></li>
-                    <li><a href="berita.html">Berita</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Layanan</h5>
-                <ul>
-                    <li><a href="layanan.html">Administrasi</a></li>
-                    <li><a href="pengaduan.html">Pengaduan</a></li>
-                    <li>
-                        <a href="pengaduan.html#cek-pengaduan">
-                            Cek Pengaduan
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h5>Informasi</h5>
-                <ul>
-                    <li><a href="kontak.html">Kontak</a></li>
-                    <li><a href="galeri.html">Galeri</a></li>
-                    <li><a href="profil.html">Profil Desa</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>
-                © 2026 Pemerintah Desa Semparuk.
-                All Rights Reserved.
-            </span>
-            <div class="footer-social">
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-<button class="back-to-top" id="backToTop">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
-<script src="script.js"></script>
-</body>
-</html>
